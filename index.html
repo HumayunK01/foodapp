@@ -6,40 +6,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Food App</title>
+    <title>Favourite Food App</title>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <h1>MyFoodApp</h1>
-        </div>
-        <div class="search">
-            <input list="browsers" placeholder="Search Foods">
-            <datalist id="browsers">
-                <option value="Biryani">
-                <option value="Samosa">
-                <option value="Dal Soup">
-                <option value="Tandoori Chicken">
-                <option value="Tandoori Fish">
-                <option value="Curry">
-            </datalist>
-        </div>
-        <div class="nav-bar">
-            <ul>
-                <li>Index</li>
-                <li>Food</li>
-                <li>About</li>
-            </ul>
-        </div>
+        <ul>
+            <li>Index</li>
+            <li>Food</li>
+            <li>About</li>
+        </ul>
     </header>
     <div class="hero">
-        <h1>India's Most Loved Foods</h1>
-        <div class="icon">
-            <i class="fa-solid fa-chevron-down"></i>
+        <div class="hero-head">
+            <h1>Top 5 Favourite Foods</h1>
+        </div>
+        <div class="hero-body">
+            <ul>
+                <li><a href="#curry">1. Massaman Curry, Thailand</a></li>
+                <li><a href="#pizza">2. Neapolitan Pizza, Italy.</a></li>
+                <li><a href="#chocolate">3. Chocolate, Mexico.</a></li>
+                <li><a href="#sushi">4. Sushi, Japan.</a></li>
+                <li><a href="#burgir">5. Hamburger, Germany.</a></li>
+            </ul>
+        </div>
+        <div class="hero-pics">
+            <div class="card" id="curry">
+                <img src="https://img.taste.com.au/eUVwa-YX/taste/2016/11/thai-massaman-beef-curry-101889-1.jpeg"
+                    alt="Massaman Curry">
+                <h2>Massaman Curry, Thailand</h2>
+            </div>
+            <div class="card" id="pizza">
+                <img src="https://www.italiarail.com/sites/default/files/2020-01/pizza_napolitana1_Fotor.jpg"
+                    alt="Massaman Curry">
+                <h2>Neapolitan Pizza, Italy</h2>
+            </div>
+            <div class="card" id="chocolate">
+                <img src="https://www.vallartadaily.com/wp-content/uploads/2017/09/chocolate-1.jpg"
+                    alt="Massaman Curry">
+                <h2>Chocolate, Mexico</h2>
+            </div>
+            <div class="card" id="sushi">
+                <img src="https://cdn-fegfh.nitrocdn.com/bJwdeZsObtsROHbGJsKNNvJfYjZSwUGF/assets/images/optimized/rev-2acc47e/wp-content/uploads/2020/08/Traditional-Japanese-Sushi-vs.-Western-Sushi-1.jpg"
+                    alt="Massaman Curry">
+                <h2>Sushi, Japan</h2>
+            </div>
+            <div class="card" id="burgir">
+                <img src="https://cdn.vox-cdn.com/thumbor/Mw5AQde8wqT_Vaqk-LMR0QmSc2g=/0x0:960x635/1200x800/filters:focal(404x242:556x394)/cdn.vox-cdn.com/uploads/chorus_image/image/54943775/the_bird_hamburg.0.jpg"
+                    alt="Massaman Curry">
+                <h2>Hamburger, Germany</h2>
+            </div>
         </div>
     </div>
 </body>
-<script src="https://kit.fontawesome.com/0b968cf647.js" crossorigin="anonymous"></script>
 
 </html>
