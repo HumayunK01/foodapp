@@ -24,7 +24,7 @@ header ul {
 }
 
 header ul li {
-  margin: 15px;
+  margin: 10px;
   padding: 15px;
   color: #fff;
   font-weight: 600;
@@ -92,6 +92,7 @@ header ul li:hover {
 
 .hero-pics .card h2 {
   color: #f6f6f2;
+  font-weight: 500;
   width: 480px;
   display: flex;
   justify-content: center;
