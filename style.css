@@ -1,8 +1,17 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+:root{
+  --primary-color: #f6f6f2;
+  --secondary-color: linear-gradient(#0f2027, #203a43, #2c5364);
+}
+
 * {
   margin: 0px;
   padding: 0px;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
@@ -10,31 +19,30 @@ html {
 }
 
 body {
-  background: #f6f6f2;
+  background: linear-gradient(#C9D6FF, #E2E2E2);
 }
 
 header {
   width: 100%;
-  background: #388087;
+  background: var(--secondary-color);
 }
 
 header ul {
-  list-style: none;
   display: flex;
 }
 
 header ul li {
   margin: 10px;
   padding: 15px;
-  color: #fff;
+  color: var(--primary-color);
   font-weight: 600;
   cursor: pointer;
   border-radius: 5px;
 }
 
 header ul li:hover {
-  background: #f6f6f2;
-  color: #388087;
+  background: #C9D6FF;
+  color: var(--secondary-color);
 }
 
 .hero {
@@ -48,20 +56,15 @@ header ul li:hover {
 }
 
 .hero .hero-head h1 {
-  color: #388087;
+  color: var(--secondary-color);
 }
 
 .hero .hero-body {
   margin: 20px;
 }
 
-.hero .hero-body ul {
-  list-style: none;
-}
-
 .hero .hero-body a {
-  text-decoration: none;
-  color: #388087;
+  color: var(--secondary-color);
   font-size: 20px;
 }
 
@@ -84,6 +87,7 @@ header ul li:hover {
 }
 
 .hero-pics .card img {
+  filter: brightness(80%);
   width: 500px;
   padding: 10px 10px 0 10px;
   border-top-left-radius: 20px;
@@ -91,13 +95,35 @@ header ul li:hover {
 }
 
 .hero-pics .card h2 {
-  color: #f6f6f2;
+  color: var(--primary-color);
   font-weight: 500;
   width: 480px;
   display: flex;
   justify-content: center;
-  background: #388087;
+  background: var(--secondary-color);
   padding: 20px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+
+@media only screen and (max-width: 500px){
+  header ul{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+  }
+  .hero .hero-head h1{
+    font-size: 30px;
+  }
+  .hero .hero-body a {
+    font-size: 18px;
+  }
+  .hero-pics .card img{
+    width: 350px;
+  }
+  .hero-pics .card h2{
+    width: 330px;
+    font-size: 20px;
+  }
 }
